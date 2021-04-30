@@ -1,0 +1,55 @@
+.Header {
+  color: white;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  display: flex;
+  overflow-x: scroll;
+}
+
+/* Ii can hide scrollbar but keep fuctionality */
+.Header::-webkit-scrollbar {
+  display: none;
+}
+
+/* fix the image */
+.Header > img {
+  object-fit: contain;
+  height: 80px;
+}
+
+/* Main header icon div */
+.header__icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+/* Child header icon div */
+.header_icon {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  cursor: pointer;
+}
+/* Icons root */
+.header_icon > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_icon > p {
+  display: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: small;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header_icon:hover > p {
+  display: inline;
+}
+
+.header_icon--active > p {
+  display: inline !important;
+}
